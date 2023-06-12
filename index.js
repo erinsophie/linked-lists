@@ -23,7 +23,8 @@ console.log(myList.find(2)); // null
 myList.insertAt(7, 2);
 console.log(myList.toString()); // (1) -> (3) -> (7) -> (5) -> null
 myList.removeAt(1);
-console.log(myList.toString()); // (1) -> (5) -> null
+console.log(myList.toString()); // (1) -> (7) -> (5) -> null
+myList.pop();
 myList.pop();
 myList.pop();
 console.log(myList.toString()); // List is empty
