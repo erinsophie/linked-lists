@@ -101,15 +101,14 @@ class LinkedList {
   // prints the values in a single string format
   toString() {
     if (this.head === null) return 'List is empty';
-    else {
-      let currentNode = this.head;
-      let string = '';
-      while (currentNode) {
-        string += `(${currentNode.value}) -> `;
-        currentNode = currentNode.next;
-      }
-      return `${string}null`;
+
+    let currentNode = this.head;
+    let string = '';
+    while (currentNode) {
+      string += `(${currentNode.value}) -> `;
+      currentNode = currentNode.next;
     }
+    return `${string}null`;
   }
 
   // inserts a new node with the provided value at the given index.
